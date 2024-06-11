@@ -5,6 +5,64 @@
         <title>Youtube</title>
         <meta charset="UTF-8"/>
         <link href="css/Estilos.css" rel="stylesheet" type="text/css"/>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #f7f7f7;
+                padding: 0px;
+            }
+            section{
+                position: fixed;
+                overflow-y: scroll;
+                background-color: white;
+                top: 100px;
+                left: 1175px;
+                bottom: 20px;
+                width: 85%;
+                padding: 10px;
+            }
+            .posicion_LogosIzquierda{
+
+                display: flex;
+                flex-direction: column; /* Cambio de dirección a columna */
+                align-items: flex-start; /* Alinear los elementos al inicio */
+                margin-right: 500px;
+                list-style: none;
+
+            }
+            .configuracion_Imagen {
+                width: 270px;
+                height: 300px; /* Ajuste la altura para acomodar las imágenes */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: white;
+                margin: 10px;
+                padding: 0px;
+                box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+            }
+
+            .configuracion_Imagen img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Mantiene la proporción de la imagen */
+                display: block;
+            }
+
+            .configuracion_Imagen figure {
+                margin: 0;
+                padding: 0%;
+                text-align: center;
+                width: 100%;
+                height: 80%;
+            }
+
+            .configuracion_Imagen figcaption {
+                margin-top: 5px;
+                color: #333;
+            }
+        </style>
     </head>
     <body>
         <header class="Parte_Arriba">
@@ -40,8 +98,6 @@
                 </ul>
             </nav>
         </header>
-
-
 
         <nav class="nav">
             <ul class="posicion_BotonesFilaVideos">
@@ -132,37 +188,55 @@
                 </li>
             </ul>
 
-
         </nav>
+        <section>
+            <nav class="nav">
+                <ul class="posicion_LogosIzquierda">
+                    <li>
+                        <div class="configuracion_Imagen" style="background-color:white;">
+                            <figure>
+                                <a href="IronMaidenVideo.html">
+                                    <img src="img/Iron maiden album 1.jpeg" alt="Iron Maiden Album"/>
+                                </a>
+                                <figcaption>Iron Maiden</figcaption>
 
-        <div class="container">
-            <main>
-                <aside class="notifications">
-                    <div class="notification">
-                        <p>Tu texto aquí.</p>
-                    </div>
-                    <div class="notification">
-                        <p>Tu texto aquí.</p>
-                    </div>
-                    <div class="notification">
-                        <p>Tu texto aquí.</p>
-                    </div>
-                    <div class="notification">
-                        <p>Tu texto aquí.</p>
-                    </div>
-                    <div class="notification">
-                        <p>Tu texto aquí.</p>
-                    </div>
-                    <div class="notification">
-                        <p>Tu texto aquí.</p>
-                    </div>
-                </aside>
-            </main>
-        </div>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="configuracion_Imagen" style="background-color:white;">
+                            <figure>
+                                <a href="KillEmAllVideo.html">
+                                    <img src="img/Metallica kill em all.jpg" alt=""/>
+                                </a>
+                                <figcaption>Metallica</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="configuracion_Imagen" style="background-color:white;">
+                            <figure>
+                                <a href="GodOfWar3Video.html">
+                                    <img src="img/God of war portada.jpg" alt=""/>
+                                </a>
+                                <figcaption>God of War 3 Official Trailer</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="configuracion_Imagen" style="background-color:white;">
+                            <figure>
+                                <a href="SpidermanVideo.html">
+                                    <img src="img/Spiderman 2018 cover.jpeg" alt=""/>
+                                </a>
+                                <figcaption>Spider-Man Official Trailer</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
 
-
-
-
+        </section>
 
     </body>
 </html>
